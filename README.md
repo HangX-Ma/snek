@@ -4,14 +4,9 @@ One tiny snake game demo using **LovyanGFX** SDL simulator. Decoupling the **Ren
 
 > Thanks for [Forairaaaaa](https://github.com/Forairaaaaa) provided support.
 
-<style>
-img {
-    margin: 40px 0 0 40px;
-    box-shadow: 0 0 0 15px #fff;
-}
-</style>
+<link rel="stylesheet" href="./assets/style.css">
 
-<div align="center">
+<div class="snek" align="center">
     <img src="./assets/snek_gamestart.png" alt="snek game start" width=200 />
     <img src="./assets/snek_gameover.png" alt="snek game over" width=200 />
 </div>

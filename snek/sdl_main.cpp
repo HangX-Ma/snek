@@ -1,16 +1,17 @@
 #include "lgfx/v1/platforms/sdl/Panel_sdl.hpp"
+#include "snek/render.h"
+
 #if defined(SDL_h_)
 
-void setup();
-void loop();
+static snek::Render render;
 
 // clang-format off
 __attribute__((weak))
 int userFunc(bool *running)
 {
-    setup();
+    render.setup();
     do {
-        loop();
+        render.loop();
     }
     while (*running);
     return 0;

@@ -1,8 +1,20 @@
-# LGFX simulator SDL
+# Snek
 
-**LovyanGFX** PC simulator on linux platform with SDL2. Check [LovyanGFX/CMake_SDL](https://github.com/lovyan03/LovyanGFX/tree/master/examples_for_PC/CMake_SDL) for details.
+One tiny snake game demo using **LovyanGFX** SDL simulator. Decoupling the **Render Engine**, **Keyboard Input** and **GameState**.
 
-> CMake recommendation ref: [Modern CMake: Do's and Don'ts](https://cliutils.gitlab.io/modern-cmake/chapters/intro/dodonot.html)
+> Thanks for [Forairaaaaa](https://github.com/Forairaaaaa) provided support.
+
+<style>
+img {
+    margin: 40px 0 0 40px;
+    box-shadow: 0 0 0 15px #fff;
+}
+</style>
+
+<div align="center">
+    <img src="./assets/snek_gamestart.png" alt="snek game start" width=200 />
+    <img src="./assets/snek_gameover.png" alt="snek game over" width=200 />
+</div>
 
 ## Prerequisite
 
@@ -19,10 +31,12 @@ sudo apt-get install -y build-essential libsdl2-dev
 ## Usage
 
 ```bash
-git clone https://github.com/HangX-Ma/LGFX-simulator-SDL.git
-cd LGFX-simulator-SDL && git submodule init --update --recursive
+git clone https://github.com/HangX-Ma/snek.git
+cd snek && git submodule init --update --recursive
 cmake -B build
 cmake --build build -j$(nproc)
+# run the game!
+./build/snek
 ```
 
 ## License

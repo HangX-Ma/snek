@@ -5,8 +5,18 @@ One tiny snake game demo using **LovyanGFX** SDL simulator. Decoupling the **Ren
 > Thanks for [Forairaaaaa](https://github.com/Forairaaaaa) provided support.
 
 <div class="snek" align="center">
-    <img src="./assets/snek_gamestart.png" alt="snek game start" width=200 />
-    <img src="./assets/snek_gameover.png" alt="snek game over" width=200 />
+  <table>
+    <tr>
+      <td><img src="./assets/snek.gif" alt="snek game" width=200 />
+      <td><img src="./assets/snek_gamestart.png" alt="snek game start" width=200 />
+      <td><img src="./assets/snek_gameover.png" alt="snek game over" width=200 />
+    </tr>
+    <tr>
+      <td align="center"><font size="2" color="#999"><u>Snek Game Demo</u></font></td>
+      <td align="center"><font size="2" color="#999"><u>Snek Game Start</u></font></td>
+      <td align="center"><font size="2" color="#999"><u>Snek Game Over</u></font></td>
+    </tr>
+  </table>
 </div>
 
 ## Prerequisite
@@ -31,6 +41,8 @@ cmake --build build -j$(nproc)
 # run the game!
 ./build/snek
 ```
+
+Control the snek movement using arrow key &uarr;, &darr; &larr; and &rarr;. Restart the game by pressing and holding down on &rarr;.
 
 ## License
 

@@ -35,7 +35,7 @@ sudo apt-get install -y build-essential libsdl2-dev
 
 ```bash
 git clone https://github.com/HangX-Ma/snek.git
-cd snek && git submodule init --update --recursive
+cd snek && git submodule update --init --recursive
 cmake -B build
 cmake --build build -j$(nproc)
 # run the game!
